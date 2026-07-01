@@ -15,7 +15,7 @@ const app = express();
 app.use(cors({
     origin: [
     "http://localhost:3000",
-    "https://quiz-whiz-chi.vercel.app/"
+    "https://quiz-whiz-chi.vercel.app"
   ],
   credentials: true
 }));
@@ -38,7 +38,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 
 
-app.use("/api/auth", authRoutes);
+app.use("https://backend-7aq8.onrender.com/api/auth", authRoutes);
 
 
 
