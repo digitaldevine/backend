@@ -10,8 +10,15 @@ const auth = require("./middleware/auth");
 const User = require("./Models/user");
 
 const app = express();
+const cors = require("cors");
 
-app.use(cors());
+app.use(cors({
+    origin: [
+    "http://localhost:3000",
+    "https://your-project.vercel.app"
+  ],
+  credentials: true
+}));
 require("dotenv").config();
 app.use(express.json());
 
