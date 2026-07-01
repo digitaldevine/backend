@@ -38,7 +38,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 
 
-app.use("https://backend-7aq8.onrender.com/api/auth", authRoutes);
+app.use("/api/auth", authRoutes);
 
 
 
