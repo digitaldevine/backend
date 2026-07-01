@@ -15,7 +15,7 @@ const app = express();
 app.use(cors({
     origin: [
     "http://localhost:3000",
-    "https://quiz-whiz-chi.vercel.app"
+    "https://quiz-whiz-umber.vercel.app"
   ],
   credentials: true
 }));
